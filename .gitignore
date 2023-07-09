@@ -40,3 +40,65 @@ captures
 .externalNativeBuild
 .cxx
 xcuserdata
+
+# Project exclude paths
+/.gradle/
+/**/build/
+/.idea/
+local.properties
+/**/*.iml
+*.iml
+firebase-app/src/nativeInterop/cinterop/modules/
+firebase-functions/src/nativeInterop/cinterop/modules/
+firebase-auth/src/nativeInterop/cinterop/modules/
+firebase-firestore/src/nativeInterop/cinterop/modules/
+firebase-database/src/nativeInterop/cinterop/modules/
+Firebase*.zip
+/Firebase
+/.DS_Store
+*.log
+
+
+/**/nativeInterop/cinterop/Cartfile.resolved
+/**/nativeInterop/cinterop/Carthage/
+/kotlin-js-store/yarn.lock
+
+# Mac OS X Finder
+.DS_Store
+
+# Private Keys
+*.pem
+
+# Xcode legacy
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+
+# Xcode
+xcuserdata/
+project.xcworkspace/
+DerivedData/
+
+# build products
+build/
+*.[oa]
+
+# repositories
+.hg
+.svn
+CVS
+
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# Cocoapods
+Pods/

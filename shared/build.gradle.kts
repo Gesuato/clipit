@@ -2,6 +2,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("com.google.gms.google-services")
 }
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
@@ -28,13 +29,12 @@ kotlin {
         framework {
             baseName = "shared"
         }
+        pod("FirebaseFirestore")
     }
-    
+
     sourceSets {
         val commonMain by getting {
-            dependencies {
-                //put your multiplatform dependencies here
-            }
+            dependencies {}
         }
         val commonTest by getting {
             dependencies {
