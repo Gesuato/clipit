@@ -19,6 +19,7 @@ pluginManagement {
         id("com.android.library").version(agpVersion)
 
         id("org.jetbrains.compose").version(composeVersion)
+        id("org.jetbrains.kotlin.jvm") version "1.8.20"
     }
 }
 
@@ -33,3 +34,5 @@ dependencyResolutionManagement {
 rootProject.name = "ClipIt"
 include(":androidApp")
 include(":shared")
+include(":data")
+include(":domain")

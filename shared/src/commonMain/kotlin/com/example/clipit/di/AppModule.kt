@@ -1,3 +1,5 @@
 package com.example.clipit.di
 
-fun appModule() = listOf(commonModule, repositoryModule, useCaseModule)
+import com.example.domain.di.domainModules
+
+fun appModule() = domainModules() + commonModule

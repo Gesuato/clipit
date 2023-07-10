@@ -1,7 +1,7 @@
-package com.example.clipit.di
+package com.example.data.di
 
-import com.example.clipit.RepositoryTest
-import com.example.clipit.Repository2Test
+import com.example.data.repositories.RepositoryTest
+import com.example.data.repositories.Repository2Test
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
 
