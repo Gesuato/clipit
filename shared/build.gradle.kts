@@ -34,7 +34,9 @@ kotlin {
 
     sourceSets {
         val commonMain by getting {
-            dependencies {}
+            dependencies {
+                implementation("dev.icerock.moko:mvvm-core:0.16.1")
+            }
         }
         val commonTest by getting {
             dependencies {
