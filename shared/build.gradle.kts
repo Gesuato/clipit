@@ -29,13 +29,14 @@ kotlin {
         framework {
             baseName = "shared"
         }
-        pod("FirebaseFirestore")
+        pod(Pod.Firebase.firebaseFirestore)
     }
 
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("dev.icerock.moko:mvvm-core:0.16.1")
+                implementation(Deps.Moko.moko)
+                implementation(Deps.Koin.core)
             }
         }
         val commonTest by getting {
